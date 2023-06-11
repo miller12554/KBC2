@@ -29,13 +29,13 @@ export const Login = () => {
                <h2>Login page</h2>
                <div className="inputs">
                     <div className="input">
-                         <input value={formData.userName} onChange={(e) => setFormData({userName: e.target.value}) } type="text"/>
+                         <input class="border-2 border-rose-500 " value={formData.userName} onChange={(e) => setFormData({userName: e.target.value}) } type="text"/>
                     </div>
                     <div className="input">
-                         <input value={formData.password} onChange={(e) => setFormData({password: e.target.value}) } type="password"/>
+                         <input class="border-2 border-rose-500 " value={formData.password} onChange={(e) => setFormData({password: e.target.value}) } type="password"/>
                     </div>
-                    <div className="button">
-                         <button onClick={doLogin}>Log in</button>
+                    <div >
+                         <button className="bg-slate-200 border border-sky-500 rounded-none" onClick={doLogin}>Log in</button>
                     </div>
                     {errorMessage ?
                     <div className="error">{errorMessage}</div>
